@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/phillipmex/robot-incident-taxonomy/main/schemas/rit-record-0.1.json",
+  "title": "RIT Incident Record v0.1",
+  "type": "object",
+  "required": [
+    "record_id", "schema_version", "record_status", "created_at",
+    "incident_at", "robot_class", "environment", "task",
+    "failure_modes", "harm_types", "severity", "parties_implicated",
+    "evidence_captured", "narrative"
+  ],
+  "properties": {
+    "record_id": { "type": "string", "format": "uuid" },
+    "schema_version": { "const": "0.1" },
+    "record_status": { "enum": ["open", "updated", "closed"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "reporter_role": { "type": "string" },
+    "incident_at": { "type": "string", "format": "date-time" },
+    "robot_make": { "type": "string" },
+    "robot_model": { "type": "string" },
+    "robot_serial": { "type": "string" },
+    "fleet_size_at_site": { "type": "integer", "minimum": 1 },
+    "robot_class": { "enum": ["RC-01","RC-02","RC-03","RC-04","RC-05","RC-06","RC-07","RC-08","RC-09","RC-10","RC-99"] },
+    "robot_class_other": { "type": "string" },
+    "environment": { "enum": ["EN-01","EN-02","EN-03","EN-04","EN-05","EN-06","EN-07","EN-08","EN-09","EN-99"] },
+    "environment_other": { "type": "string" },
+    "task": { "enum": ["TK-01","TK-02","TK-03","TK-04","TK-05","TK-06","TK-07","TK-08","TK-09","TK-10","TK-11","TK-99"] },
+    "failure_modes": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["FM-01","FM-02","FM-03","FM-04","FM-05","FM-06","FM-07","FM-08","FM-09","FM-10","FM-11","FM-98","FM-99"] }
+    },
+    "contributing_factors": {
+      "type": "array", "uniqueItems": true,
+      "items": { "enum": ["FM-01","FM-02","FM-03","FM-04","FM-05","FM-06","FM-07","FM-08","FM-09","FM-10","FM-11","FM-98","FM-99"] }
+    },
+    "harm_types": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["HT-00","HT-01","HT-02","HT-03","HT-04","HT-05","HT-06","HT-07"] }
+    },
+    "severity": { "enum": ["SV-0","SV-1","SV-2","SV-3","SV-4","SV-5"] },
+    "injured_party_role": { "enum": ["employee","customer","visitor","public","contractor","none"] },
+    "parties_implicated": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["PT-01","PT-02","PT-03","PT-04","PT-05","PT-06","PT-99"] }
+    },
+    "evidence_captured": {
+      "type": "array", "uniqueItems": true,
+      "items": { "enum": ["EV-01","EV-02","EV-03","EV-04","EV-05","EV-06","EV-07","EV-08"] }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "description"],
+        "properties": {
+          "code": { "enum": ["EV-01","EV-02","EV-03","EV-04","EV-05","EV-06","EV-07","EV-08"] },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "estimated_total_cost": {
+      "type": "object",
+      "required": ["currency", "amount"],
+      "properties": {
+        "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "amount": { "type": "number", "minimum": 0 }
+      }
+    },
+    "downtime_hours": { "type": "number", "minimum": 0 },
+    "narrative": { "type": "string", "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "harm_types": { "contains": { "const": "HT-01" } } }, "required": ["harm_types"] },
+      "then": { "required": ["injured_party_role"] }
+    }
+  ]
+}

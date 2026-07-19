@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| Version | 0.1 (draft for review — not yet published) |
+| Version | 0.1 (published draft — open for review) |
 | Status | DRAFT — field codes and enumerations are stable within v0.x unless marked otherwise; new codes may be appended |
 | License | CC BY 4.0 (see `../LICENSE.md`) |
 | Maintainer | Lossbook |
@@ -222,10 +222,12 @@ Coding notes on the example: the *initiating* failure is coded as both FM-01 (th
 
 ## 12. JSON Schema (v0.1)
 
+The canonical machine-readable copy of this schema is `../schemas/rit-record-0.1.json` in this repository; the `$id` below resolves to it.
+
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://lossbook.example/schemas/rit-record-0.1.json",
+  "$id": "https://raw.githubusercontent.com/phillipmex/robot-incident-taxonomy/main/schemas/rit-record-0.1.json",
   "title": "RIT Incident Record v0.1",
   "type": "object",
   "required": [

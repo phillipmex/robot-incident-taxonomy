@@ -10,7 +10,7 @@ The taxonomy in this repo is published as an open standard (CC BY 4.0), delibera
 
 ## Status
 
-**v0.1 draft — not yet published externally.** This repo is private working material. External publication (public GitHub repo, community submission) is planned but awaits the owner's explicit go-ahead; see `PUBLISH.md`.
+**v0.1 published draft (2026-07-19)** — open for review and adoption. Feedback and field experience welcome via issues; see `BACKLOG.md` for the v0.2 review agenda.
 
 ## Repo layout
 
@@ -18,6 +18,7 @@ The taxonomy in this repo is published as an open standard (CC BY 4.0), delibera
 |---|---|
 | `taxonomy/robot-incident-taxonomy-v0.1.md` | The core deliverable: the standardized robot-incident taxonomy — coded fields, enumerated values, severity scale, worked example, JSON schema |
 | `taxonomy/evidence-pack-checklist.md` | The one-click evidence pack as a checklist: what a warranty / RaaS-SLA / insurance claim needs documented, mapped to taxonomy fields |
+| `schemas/rit-record-0.1.json` | Canonical machine-readable JSON Schema for an incident record (same schema as §12 of the taxonomy) |
 | `LICENSE.md` | CC BY 4.0 for the taxonomy documents |
 | `PUBLISH.md` | Publication plan and options, awaiting owner approval |
 | `BACKLOG.md` | v0.2 review tasks and guardrails (notably: do not build the SaaS yet) |

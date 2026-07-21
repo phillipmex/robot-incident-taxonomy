@@ -1,44 +1,45 @@
-# Publication Plan — AWAITING OWNER GO-AHEAD
+# Publication Plan — PUBLISHED 2026-07-19
 
-**Status: NOTHING has been published externally. This repo is local-only (no remote, no push).**
+**Status: PUBLISHED. Owner gave the go-ahead 2026-07-19.** The taxonomy is public under
+`github.com/phillipmex/robot-incident-taxonomy` — `v0.1` tagged, canonical JSON Schema live,
+topics added. The public clock on the standard has started.
 
-Publication puts the taxonomy out under the owner's name and starts the public clock on the standard. It requires the owner's explicit OK before any step below is taken. Until then: no remote repo, no posts, no submissions, no sharing of these files.
+## What shipped (2026-07-19)
 
-## Why publish at all
+- [x] Public GitHub repo created and pushed: **github.com/phillipmex/robot-incident-taxonomy**.
+- [x] Initial release tagged **`v0.1`** so adopters can pin a version.
+- [x] Canonical JSON Schema published at `schemas/rit-record-0.1.json` with the real
+      `$id` (`raw.githubusercontent.com/.../main/...`) — placeholder `lossbook.example` replaced.
+- [x] Repo topics added (`robotics`, `insurance`, `safety`, `taxonomy`, `open-standard`) for discoverability.
+- [x] README status set to **published draft**.
 
-Per the portfolio plan (phase 6): the open taxonomy is the ACORD-forms move — days of work, permanent option value. A standard only compounds if others can find and adopt it, and priority/authorship only accrues if publication is dated and attributable. Cost of all options below: $0.
+## Remaining (optional — owner-paced, no urgency)
 
-## Options, ranked
+### GitHub Pages — owner action required
+- Enable GitHub Pages so the taxonomy has a rendered citable URL. **This step is blocked for
+  Claude** (repo-settings classifier) — the `!` command was handed to the owner to run; do
+  from the VM if/when wanted. Not required for the standard to be citable (the raw GitHub URLs
+  already are).
 
-### 1. Public GitHub repo + GitHub Pages — $0, do first
+### Community submission — staged, only if owner wants visibility now
+Post only after any Pages URL exists, so all roads lead to the canonical copy. Candidate venues
+(verify current self-promotion norms per venue first):
+- Robotics: r/robotics, Hacker News (Show HN), ROS Discourse.
+- Robotics-safety circles: A3 (Association for Advancing Automation), ISO 10218 / ISO 3691-4
+  working-group contacts — via personal outreach, not cold submission.
+- Insurance side: robotics-program carriers/MGAs from the research (Axis robotics program, AIUC)
+  and broker contacts — framed as "free standard, want field feedback for v0.2".
+- Trade press that covered the missing-loss-data gap (The Robot Report, PYMNTS physical-AI
+  insurance coverage) — a short pitch note, only if the owner wants early visibility.
 
-- Push this repo to a public GitHub repository (suggested: `lossbook/robot-incident-taxonomy` or under the owner's account; TO VERIFY name availability).
-- Enable GitHub Pages on the repo so the taxonomy has a citable URL; the markdown renders as-is, no build needed.
-- Add repo topics (`robotics`, `insurance`, `safety`, `taxonomy`, `open-standard`) for discoverability.
-- Tag the initial release `v0.1` so adopters can pin a version.
-- Effort: under an hour. Reversible only in the weak sense (public is public).
+### Lightweight standalone page — optional, later
+A one-page site (Pages custom domain, ~$10/yr — the only non-zero cost, and optional). Skip
+until adoption interest exists.
 
-### 2. Community submission — after option 1, staged
+## Guard (still in force)
 
-Post/submit only after the GitHub URL exists, so all roads lead to the canonical copy. Candidate venues (TO VERIFY current norms and whether self-promotion rules allow it in each):
-
-- Robotics communities: r/robotics, Hacker News (Show HN), ROS Discourse.
-- Robotics safety circles: A3 (Association for Advancing Automation) contacts, RIA/ISO 10218- and ISO 3691-4-adjacent working-group people — via personal outreach, not cold submission.
-- Insurance side: the robotics-program carriers and MGAs named in the research (Axis robotics program, AIUC) and any broker contacts — framed as "free standard, want your field feedback for v0.2".
-- Trade press that covered the missing-loss-data gap (The Robot Report, PYMNTS coverage of physical-AI insurance) — a short pitch note, only if the owner wants visibility this early.
-
-### 3. Lightweight standalone page — optional, later
-
-A one-page site (GitHub Pages custom domain, ~$10/yr for a domain — the only non-zero cost in this plan, and optional). Skip until adoption interest exists.
-
-## Pre-publication checklist (owner + one pass)
-
-- [ ] Owner reads both taxonomy documents end-to-end and approves content going out under their name.
-- [ ] Resolve or consciously ship the `TO VERIFY` markers (they can ship in a v0.1 draft — drafts are allowed open questions — but the owner should know they're there).
-- [ ] Decide attribution identity: personal name, "Lossbook", or both (affects LICENSE.md attribution line and README).
-- [ ] Replace the placeholder `$id` URL in the JSON Schema (`lossbook.example`) with the real published URL.
-- [ ] Owner explicitly says "publish" — then, and only then, create the remote and push.
-
-## What publication does NOT include
-
-- No SaaS, no signup page, no data collection, no waitlist. The standard is the only thing shipping (see `BACKLOG.md` guard).
+- No SaaS, no signup page, no data collection, no waitlist. The **standard** is the only thing
+  shipping (see `BACKLOG.md` guard). Publishing the taxonomy did not change this — lossbook
+  remains option-value only until adoption interest appears.
+- Open `TO VERIFY` markers were consciously shipped in the v0.1 draft (drafts allow open
+  questions); resolve them into a v0.2 as field feedback arrives.

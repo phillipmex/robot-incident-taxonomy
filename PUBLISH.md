@@ -15,11 +15,10 @@ topics added. The public clock on the standard has started.
 
 ## Remaining (optional — owner-paced, no urgency)
 
-### GitHub Pages — owner action required
-- Enable GitHub Pages so the taxonomy has a rendered citable URL. **This step is blocked for
-  Claude** (repo-settings classifier) — the `!` command was handed to the owner to run; do
-  from the VM if/when wanted. Not required for the standard to be citable (the raw GitHub URLs
-  already are).
+### GitHub Pages — DONE 2026-07-23
+- [x] GitHub Pages enabled (main branch, `/` root; owner authorized). Rendered citable URL live:
+      **https://phillipmex.github.io/robot-incident-taxonomy/** (README rendered via default
+      Jekyll theme; HTTP 200 verified). Raw GitHub URLs remain citable too.
 
 ### Community submission — staged, only if owner wants visibility now
 Post only after any Pages URL exists, so all roads lead to the canonical copy. Candidate venues

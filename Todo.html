@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lossbook — TODO</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #1a2233; --muted: #5b6575;
+    --line: #e3e7ee; --accent: #2563eb; --good: #16a34a; --warn: #d97706;
+    --done-ink: #8a93a3; --chip-bg: #eef2f8; --code: #334155;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151c; --card: #1a1f2a; --ink: #e7ebf2; --muted: #9aa4b5;
+      --line: #2a3140; --accent: #60a5fa; --good: #4ade80; --warn: #fbbf24;
+      --done-ink: #6b7484; --chip-bg: #232a38; --code: #cbd5e1;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font: 15px/1.55 "Segoe UI", system-ui, sans-serif; padding: 32px 18px 64px; }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+  .updated { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 34px 0 12px; }
+  ul.compact { list-style: none; }
+  ul.compact li { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 9px 14px; margin-bottom: 6px; font-size: 14px; }
+  ul.compact li b { color: var(--warn); }
+  ul.compact li .tag { float: right; font-size: 12px; color: var(--muted); background: var(--chip-bg); border-radius: 20px; padding: 1px 9px; margin-left: 8px; }
+  .done li { color: var(--done-ink); }
+  .done li b { color: var(--done-ink); }
+  .done li::before { content: "✔ "; color: var(--good); }
+  code, .cmd { font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; color: var(--code); background: var(--chip-bg); border-radius: 4px; padding: 1px 5px; }
+  .src { color: var(--muted); font-size: 12px; margin-top: 30px; border-top: 1px solid var(--line); padding-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>lossbook — robot-incident taxonomy tracker</h1>
+  <p class="subtitle">The loss-data bureau for physical AI: a free, open (CC BY 4.0) taxonomy for coding robot incidents — the ACORD-forms play that seeds a future pooled loss-data bureau. No SaaS, no data collection yet.</p>
+  <div class="updated">Built 2026-07-23 from <code>C:\Users\Admin\repos\lossbook</code></div>
+
+  <h2>In progress</h2>
+  <ul class="compact">
+    <li><span class="tag">outreach</span><b>NEXT —</b> Draft 2–3 warm, individually-addressed outreach notes to safety/insurance/RaaS practitioners asking for a 30-min read of v0.1 (agent drafts, owner sends per PM call 2026-07-23 — cold HN/Reddit posts held for now)</li>
+    <li><span class="tag">v0.2</span>Collect field feedback from robotics-safety contacts (A3, ISO 10218/3691-4), insurance side (MGA/carrier, Axis robotics program, AIUC, brokers), a RaaS operator/integrator, and a deployer ops manager</li>
+  </ul>
+
+  <h2>Open</h2>
+  <ul class="compact">
+    <li><span class="tag">v0.2</span>Resolve <code>TO VERIFY</code> markers: aerial-drone scope, severity cost anchors vs. carrier deductible/attachment conventions, regulatory cross-references (OSHA recordability, EU Machinery Regulation)</li>
+    <li><span class="tag">v0.2</span>Multi-robot incident representation (robot–robot collisions)</li>
+    <li><span class="tag">conditional</span>Injury sub-coding (AIS alignment) — only if a carrier/MGA reviewer asks</li>
+    <li><span class="tag">v0.2</span>Anonymization/pseudonymization profile for pooled sharing</li>
+    <li><span class="tag">v0.2</span>Validate the JSON Schema against 3–5 more synthetic incident records across RC/EN combinations</li>
+    <li><span class="tag">v0.2</span>Sanity-check evidence-pack checklist against one real OEM warranty and one real RaaS contract (redacted)</li>
+    <li><span class="tag">optional</span>Community submission (r/robotics, Show HN, ROS Discourse, trade press) — staged, owner decides on visibility timing</li>
+    <li><span class="tag">later</span>Lightweight standalone Pages site with custom domain (~$10/yr) — skip until adoption interest exists</li>
+    <li><span class="tag">future</span>Declare v1.0 field freeze once v0.2 feedback is incorporated</li>
+  </ul>
+
+  <h2>Done</h2>
+  <ul class="compact done">
+    <li><span class="tag">v0.1</span>Robot Incident Taxonomy v0.1 + evidence-pack checklist + CC BY 4.0 license added</li>
+    <li>Public repo pushed (github.com/phillipmex/robot-incident-taxonomy), v0.1 tag cut</li>
+    <li>Canonical JSON Schema published at <code>schemas/rit-record-0.1.json</code> with real <code>$id</code></li>
+    <li>README and PUBLISH.md updated to reflect published-draft status</li>
+    <li>GitHub Pages live: https://phillipmex.github.io/robot-incident-taxonomy/</li>
+    <li>v0.2 field-feedback GitHub issue template and adoption guide added</li>
+  </ul>
+
+  <p class="src">Sources: README.md, BACKLOG.md, PUBLISH.md, git log. Regenerate by editing this file.</p>
+
+</div>
+</body>
+</html>

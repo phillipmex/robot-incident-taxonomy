@@ -18,6 +18,8 @@
 
 ## Feedback round (USER ACTION — outreach is the owner's, not the agent's)
 
+- [ ] **Draft the 2–3 warm outreach notes** (agent can draft; owner sends). PM call 2026-07-23: hold cold broadcast posts (HN/Reddit) — wrong audience, one-shot novelty, no traction signal yet — and instead reach the practitioners below via short individually-addressed notes: *"published a free open incident taxonomy (CC BY 4.0), want field feedback for v0.2"* + the live Pages URL (https://phillipmex.github.io/robot-incident-taxonomy/). Ask the agent for the drafts when ready.
+
 Ask for a 30-minute read of v0.1 from:
 
 - [ ] Robotics safety people: A3 (Association for Advancing Automation) contacts; anyone adjacent to ISO 10218 / ISO 3691-4 working groups; a warehouse-robotics safety engineer if reachable

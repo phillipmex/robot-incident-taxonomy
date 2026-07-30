@@ -2,7 +2,7 @@
 
 **Status:** DRAFTS for the owner to send (agent drafts, owner sends — per BACKLOG guardrail). Each is short, individually-addressed, value-first: it offers a free open standard and asks for a read, not a sale. No SaaS, no waitlist, no ask beyond feedback.
 
-**Before sending each one:** fill the `[Name]` and the one-line `[personal hook]` (how you know them / why them specifically). The hook is what makes it warm rather than a blast — keep it genuine and specific. Send individually, not as a group email.
+**Before sending each one:** names/hooks below are best-effort matches from a public web search (not personal connections) — verify each person's current role/company before sending, since search results can be stale. Send individually, not as a group email.
 
 Live standard: **https://phillipmex.github.io/robot-incident-taxonomy/**
 License: CC BY 4.0. Cite as *Robot Incident Taxonomy v0.1*.
@@ -13,7 +13,7 @@ License: CC BY 4.0. Cite as *Robot Incident Taxonomy v0.1*.
 
 Subject: A free open incident taxonomy for robot deployments — 30-min read?
 
-[Name] — [personal hook: e.g. "we crossed paths at the A3 safety session" / "I've followed your ISO 3691-4 work"].
+Carole — I saw you're A3's Director of Robotic Standards Development, and this sits right in ISO 10218/3691-4 territory, so I wanted your read on it.
 
 I just published a free open standard for describing robot incidents — coded fields, a severity scale, and a JSON schema, all CC BY 4.0 so anyone can adopt or extend it. It's meant to be the common language a deployer, OEM, integrator, and insurer can all use to describe the same event the same way.
 
@@ -29,7 +29,7 @@ Thanks either way — Phillip
 
 Subject: Open loss-taxonomy for robot risk — would value your underwriting read
 
-[Name] — [personal hook: e.g. "saw you're placing/underwriting robotics coverage" / "we spoke about physical-AI risk at ___"].
+Rajiv — I saw AIUC is building out AI/agent liability underwriting, and given your insurance background before AIUC, you seemed like exactly the right read for this.
 
 Robot liability is becoming a real commercial line, but there's no shared way to describe a robot loss — every claim is a documentation fight between the deployer, OEM, and software vendor. I've published a free open incident taxonomy (CC BY 4.0) as a first brick: standardized fields, severity anchors mapped toward claim/deductible conventions, and an evidence-pack checklist.
 
@@ -45,7 +45,7 @@ Thank you — Phillip
 
 Subject: Does this incident taxonomy match how you'd actually log a fault?
 
-[Name] — [personal hook: e.g. "you run a fleet of ___ in the field" / "we met through ___"].
+Andy — I saw your robotics deployment work at Formic, right on the sharp end of these incidents, and wanted your read on whether this taxonomy actually holds up in the field.
 
 You're on the sharp end of robot incidents — you file with both the OEM (warranty/SLA) and the customer (liability), so you feel the missing common vocabulary more than anyone. I've published a free open taxonomy (CC BY 4.0) for coding robot incidents: the fields, a severity scale, a worked example, and a JSON schema — plus an evidence-pack checklist mapped to warranty/RaaS-SLA/insurance needs.
 

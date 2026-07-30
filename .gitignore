@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# per-outreach PII: contact rosters, staged emails, generated samples, send results
+outreach/data/

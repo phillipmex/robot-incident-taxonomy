@@ -4,6 +4,8 @@
 
 **Before sending each one:** names/hooks below are best-effort matches from a public web search (not personal connections) — verify each person's current role/company before sending, since search results can be stale. Send individually, not as a group email.
 
+**Verified 2026-08-01 (web search):** all three roles still current — Carole Franklin, Director of Standards Development Robotics at A3 ([source](https://www.automate.org/a3/meet-our-staff)); Rajiv Dattani, co-founder of AIUC ([source](https://www.fastcompany.com/91550776/rajiv-dattani-is-bringing-insurance-to-the-ai-agent-boom)); Andy Larson, Head of Robotic Deployment at Formic ([source](https://theorg.com/org/formic/org-chart/andy-larson)). No email addresses on file for any of them — sending still requires the owner to find contact details and send individually.
+
 Live standard: **https://phillipmex.github.io/robot-incident-taxonomy/**
 License: CC BY 4.0. Cite as *Robot Incident Taxonomy v0.1*.
 

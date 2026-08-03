@@ -6,6 +6,13 @@
 
 **Verified 2026-08-01 (web search):** all three roles still current — Carole Franklin, Director of Standards Development Robotics at A3 ([source](https://www.automate.org/a3/meet-our-staff)); Rajiv Dattani, co-founder of AIUC ([source](https://www.fastcompany.com/91550776/rajiv-dattani-is-bringing-insurance-to-the-ai-agent-boom)); Andy Larson, Head of Robotic Deployment at Formic ([source](https://theorg.com/org/formic/org-chart/andy-larson)). No email addresses on file for any of them — sending still requires the owner to find contact details and send individually.
 
+**Contact paths found 2026-08-03 (web search — no direct/verified email for any of the three; ZoomInfo/RocketReach have addresses but masked behind a paywall, not reconstructed here to avoid guessing wrong):**
+- **Carole Franklin** — LinkedIn: https://www.linkedin.com/in/carole-strait-franklin-64972b7/. Org fallback: A3 main line (734) 994-6088 / automate.org contact page.
+- **Rajiv Dattani** — LinkedIn: https://www.linkedin.com/in/rajiv-dattani/. Org fallback: aiuc.com contact page.
+- **Andy Larson** — LinkedIn: https://www.linkedin.com/in/andydlarson/. **Flag:** his LinkedIn now lists "Vice President of Fleet Operations at Formic," not "Head of Robotic Deployment" as drafted below — worth a quick glance at his profile before sending in case the framing ("you file with both the OEM and the customer") no longer fits his current role. Org fallback: formic.co.
+
+Recommended send path for all three, given no email: a short LinkedIn connection request or DM using the message text below (trim to fit LinkedIn's character limits if sending as a connection note).
+
 Live standard: **https://phillipmex.github.io/robot-incident-taxonomy/**
 License: CC BY 4.0. Cite as *Robot Incident Taxonomy v0.1*.
 

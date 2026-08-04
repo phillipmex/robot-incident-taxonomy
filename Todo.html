@@ -82,6 +82,11 @@
   .ps-link, .doc { display: inline-block; font-size: 13px; color: var(--good); text-decoration: none; border: 1px solid var(--good); border-radius: 5px; padding: 3px 10px; margin-bottom: 16px; }
   .ps-link:hover, .doc:hover { background: var(--chip-bg); }
   .src { color: var(--muted); font-size: 12px; margin-top: 30px; border-top: 1px solid var(--line); padding-top: 10px; }
+
+  /* canonical tracker items -- normalized 2026-08-03, spec: repos\.master\TRACKER-SPEC.md */
+  ul.items { list-style: none; padding: 0; margin: 0; }
+  ul.items li { display: flex; align-items: flex-start; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 9px 14px; margin-bottom: 6px; font-size: 14px; }
+  ul.items li .tag { float: none; align-self: center; margin-left: 8px; }
 </style>
 </head>
 <body>
@@ -92,38 +97,39 @@
   <div class="updated">Built 2026-07-23 from <code>C:\Users\Admin\repos\lossbook</code></div>
 
   <h2>In progress</h2>
-  <ul class="compact">
-    <li><span class="tag">outreach</span><b>NEXT —</b> Andy Larson (Formic) has no verified email — reach out manually via LinkedIn</li>
-    <li><span class="tag">v0.2</span>Collect field feedback from robotics-safety contacts (A3, ISO 10218/3691-4), insurance side (MGA/carrier, Axis robotics program, AIUC, brokers), a RaaS operator/integrator, and a deployer ops manager</li>
+  <ul class="items">
+    <li class="next"><span class="icon">&#9658;</span><span class="label"><b>NEXT —</b> Andy Larson (Formic) has no verified email — reach out manually via LinkedIn</span><span class="tag">outreach</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Collect field feedback from robotics-safety contacts (A3, ISO 10218/3691-4), insurance side (MGA/carrier, Axis robotics program, AIUC, brokers), a RaaS operator/integrator, and a deployer ops manager</span><span class="tag">v0.2</span></li>
   </ul>
 
   <h2>Open</h2>
-  <ul class="compact">
-    <li><span class="tag">v0.2</span>Resolve <code>TO VERIFY</code> markers: aerial-drone scope, severity cost anchors vs. carrier deductible/attachment conventions, regulatory cross-references (OSHA recordability, EU Machinery Regulation)</li>
-    <li><span class="tag">v0.2</span>Multi-robot incident representation (robot–robot collisions)</li>
-    <li><span class="tag">conditional</span>Injury sub-coding (AIS alignment) — only if a carrier/MGA reviewer asks</li>
-    <li><span class="tag">v0.2</span>Anonymization/pseudonymization profile for pooled sharing</li>
-    <li><span class="tag">v0.2</span>Validate the JSON Schema against 3–5 more synthetic incident records across RC/EN combinations</li>
-    <li><span class="tag">v0.2</span>Sanity-check evidence-pack checklist against one real OEM warranty and one real RaaS contract (redacted)</li>
-    <li><span class="tag">owner-call</span>Community submission timing — posting to r/robotics, Show HN, ROS Discourse, trade press. The draft/staging is ready; whether and when to go public is owner's decision.</li>
-    <li><span class="tag">later</span>Lightweight standalone Pages site with custom domain (~$10/yr) — skip until adoption interest exists</li>
-    <li><span class="tag">future</span>Declare v1.0 field freeze once v0.2 feedback is incorporated</li>
+  <ul class="items">
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Resolve <code>TO VERIFY</code> markers: aerial-drone scope, severity cost anchors vs. carrier deductible/attachment conventions, regulatory cross-references (OSHA recordability, EU Machinery Regulation)</span><span class="tag">v0.2</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Multi-robot incident representation (robot–robot collisions)</span><span class="tag">v0.2</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Injury sub-coding (AIS alignment) — only if a carrier/MGA reviewer asks</span><span class="tag">conditional</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Anonymization/pseudonymization profile for pooled sharing</span><span class="tag">v0.2</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Validate the JSON Schema against 3–5 more synthetic incident records across RC/EN combinations</span><span class="tag">v0.2</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Sanity-check evidence-pack checklist against one real OEM warranty and one real RaaS contract (redacted)</span><span class="tag">v0.2</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Community submission timing — posting to r/robotics, Show HN, ROS Discourse, trade press. The draft/staging is ready; whether and when to go public is owner's decision.</span><span class="tag">owner-call</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Lightweight standalone Pages site with custom domain (~$10/yr) — skip until adoption interest exists</span><span class="tag">later</span></li>
+    <li class="next"><span class="icon">&#9658;</span><span class="label">Declare v1.0 field freeze once v0.2 feedback is incorporated</span><span class="tag">future</span></li>
   </ul>
 
   <h2>Done</h2>
-  <ul class="compact done">
-    <li><span class="tag">v0.1</span>Robot Incident Taxonomy v0.1 + evidence-pack checklist + CC BY 4.0 license added</li>
-    <li>Public repo pushed (github.com/phillipmex/robot-incident-taxonomy), v0.1 tag cut</li>
-    <li>Canonical JSON Schema published at <code>schemas/rit-record-0.1.json</code> with real <code>$id</code></li>
-    <li>README and PUBLISH.md updated to reflect published-draft status</li>
-    <li>GitHub Pages live: https://phillipmex.github.io/robot-incident-taxonomy/</li>
-    <li>v0.2 field-feedback GitHub issue template and adoption guide added</li>
-    <li><span class="tag">outreach</span>3 warm outreach note drafts written (safety, insurance, RaaS practitioner) — outreach-drafts.md</li>
-    <li><span class="tag">outreach</span>Sent to Carole Franklin (A3) and Rajiv Dattani (AIUC) via CDP Gmail send — logged in shared cross-project sendlog</li>
+  <ul class="items">
+    <li class="done"><span class="icon">&#10003;</span><span class="label">Robot Incident Taxonomy v0.1 + evidence-pack checklist + CC BY 4.0 license added</span><span class="tag">v0.1</span></li>
+    <li class="done"><span class="icon">&#10003;</span><span class="label">Public repo pushed (github.com/phillipmex/robot-incident-taxonomy), v0.1 tag cut</span></li>
+    <li class="done"><span class="icon">&#10003;</span><span class="label">Canonical JSON Schema published at <code>schemas/rit-record-0.1.json</code> with real <code>$id</code></span></li>
+    <li class="done"><span class="icon">&#10003;</span><span class="label">README and PUBLISH.md updated to reflect published-draft status</span></li>
+    <li class="done"><span class="icon">&#10003;</span><span class="label">GitHub Pages live: https://phillipmex.github.io/robot-incident-taxonomy/</span></li>
+    <li class="done"><span class="icon">&#10003;</span><span class="label">v0.2 field-feedback GitHub issue template and adoption guide added</span></li>
+    <li class="done"><span class="icon">&#10003;</span><span class="label">3 warm outreach note drafts written (safety, insurance, RaaS practitioner) — outreach-drafts.md</span><span class="tag">outreach</span></li>
+    <li class="done"><span class="icon">&#10003;</span><span class="label">Sent to Carole Franklin (A3) and Rajiv Dattani (AIUC) via CDP Gmail send — logged in shared cross-project sendlog</span><span class="tag">outreach</span></li>
   </ul>
 
   <p class="src">Sources: README.md, BACKLOG.md, PUBLISH.md, git log. Regenerate by editing this file.</p>
 
 </div>
+<p class="updated">Last updated: 2026-08-03 (normalized to canonical tracker schema)</p>
 </body>
 </html>

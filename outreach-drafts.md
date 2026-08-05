@@ -6,6 +6,8 @@
 
 **Verified 2026-08-01 (web search):** all three roles still current — Carole Franklin, Director of Standards Development Robotics at A3 ([source](https://www.automate.org/a3/meet-our-staff)); Rajiv Dattani, co-founder of AIUC ([source](https://www.fastcompany.com/91550776/rajiv-dattani-is-bringing-insurance-to-the-ai-agent-boom)); Andy Larson, Head of Robotic Deployment at Formic ([source](https://theorg.com/org/formic/org-chart/andy-larson)). No email addresses on file for any of them — sending still requires the owner to find contact details and send individually.
 
+**CORRECTION 2026-08-05 (sendlog check — the 08-03 note below was wrong):** Carole and Rajiv WERE emailed 2026-07-29 (cfranklin@automate.org, rajiv@aiuc.com — both delivered, 72h re-check clean 08-03, logged in `aug\data\sendlog.csv` under `lossbook-outreach`). Do NOT send them the same pitch on LinkedIn. If still silent ~2026-08-12: one short email follow-up in the same thread, different text. Only Andy Larson has never been contacted — his LinkedIn note is the outstanding send.
+
 **Contact paths found 2026-08-03 (web search — no direct/verified email for any of the three; ZoomInfo/RocketReach have addresses but masked behind a paywall, not reconstructed here to avoid guessing wrong):**
 - **Carole Franklin** — LinkedIn: https://www.linkedin.com/in/carole-strait-franklin-64972b7/. Org fallback: A3 main line (734) 994-6088 / automate.org contact page.
 - **Rajiv Dattani** — LinkedIn: https://www.linkedin.com/in/rajiv-dattani/. Org fallback: aiuc.com contact page.
